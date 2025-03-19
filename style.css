@@ -255,3 +255,25 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .team-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .investment-grid,
+    .sectors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .investment-grid > div,
+    .sectors-grid > div {
+        margin: 0 1rem;
+    }
+}

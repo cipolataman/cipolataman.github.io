@@ -256,8 +256,9 @@ footer {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    text-align: justify; /* This will center-justify the text */
-    text-align-last: center; /* This centers the last line of the paragraph */
+    text-align: left; /* Left-aligns all text */
+    text-align-last: left; /* Left-aligns the last line */
+    hyphens: none; /* Disables automatic hyphenation */
 }
 
 .team-grid {

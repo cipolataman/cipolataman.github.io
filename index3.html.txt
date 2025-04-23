@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W40SWEW7DK"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'G-W40SWEW7DK');
+	</script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batai Capital Partners</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="attached_assets/LOGO.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="attached_assets/LOGO.png" alt="Batai Capital Partners">
+            </div>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Building Tomorrow's Leaders</h1>
+            <p>We are a private equity firm focused on buyout and strategic investments in high-growth sectors across Malaysia and ASEAN. By partnering with innovative businesses, we drive transformation, foster growth, and create lasting value for investors and communities alike.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Introduction</h2>
+            <p class="section-intro">At Batai Capital Partners, we focus on buyout and strategic minority investments in thriving companies across ASEAN’s most dynamic sectors. Our mission is to empower businesses to scale, achieve operational excellence, and create lasting value for shareholders.</p>
+        </section>
+
+        <section class="section">
+            <h2>Committed to Responsible Shariah Based Investing</h2>
+            <p class="section-intro">We are dedicated to delivering investment solutions rooted in Shariah principles. Our approach balances financial growth with ethical responsibility, creating a portfolio that aligns with both prosperity and purpose. With deep market expertise and a commitment to compliance, we guide investors through the nuances of ethical investing. Together, we aim to define success with integrity and impact.</p>
+        </section>
+
+        <section class="section">
+            <h2>Forging Strategic Alliances</h2>
+            <p class="section-intro">BCP is finalising a landmark Co-GP partnership with a Global Investment Partner, unlocking RM500 million in private equity funds across Malaysia, Southeast Asia, and Europe. This collaboration strengthens our ability to drive growth and deliver value.</p>
+        </section>
+
+        <section class="section">
+            <h2>Investment Mandate across Malaysia and ASEAN</h2>
+            <p class="section-intro">BCP is actively pursuing compelling private equity opportunities across ASEAN. If you have a promising business or investment prospect, we’d love to explore it with you. Let’s grow together.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Batai Capital Partners. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

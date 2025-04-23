@@ -16,66 +16,222 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="attached_assets/LOGO.png">
     <style>
-        /* CRSSNT Feed Styling */
-        .crssnt-feed {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .crssnt-feed h2 {
-            text-align: center;
-            margin-bottom: 30px;
+        /* Main Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
-        }
-        .crssnt-container {
-            border: 1px solid #e1e1e1;
-            border-radius: 8px;
-            padding: 20px;
-            background: #f9f9f9;
-        }
-        .crssnt-item {
-            margin-bottom: 25px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #eee;
-        }
-        .crssnt-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .crssnt-title {
-            font-weight: 600;
-            color: #0066cc;
-            margin-bottom: 8px;
-            font-size: 1.1em;
-        }
-        .crssnt-description {
-            color: #555;
-            line-height: 1.5;
-        }
-        .crssnt-date {
-            color: #777;
-            font-size: 0.85em;
-            margin-top: 5px;
-        }
-        .crssnt-loading {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-        }
-        .crssnt-error {
-            color: #d9534f;
-            text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
         
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: #0066cc;
+        }
+        
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #2c3e50;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('attached_assets/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #4a5568;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .section-intro {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        /* CRSSNT Feed Styling */
+        .crssnt-feed {
+            max-width: 1000px;
+            margin: 4rem auto;
+        }
+        
+        .crssnt-feed h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .crssnt-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 2rem;
+            border: 1px solid #e1e4e8;
+        }
+        
+        .crssnt-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #f0f2f5;
+        }
+        
+        .crssnt-item:last-child {
+            border-bottom: none;
+        }
+        
+        .crssnt-title {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .crssnt-description {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        
+        .crssnt-loading {
+            text-align: center;
+            color: #718096;
+            padding: 2rem;
+            font-style: italic;
+        }
+        
+        .crssnt-error {
+            text-align: center;
+            color: #e53e3e;
+            padding: 2rem;
+        }
+        
+        /* Responsive Styles */
         @media (max-width: 768px) {
-            .crssnt-feed {
-                margin: 20px auto;
-                padding: 0 15px;
+            .menu-toggle {
+                display: block;
             }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                flex-direction: column;
+                background: #fff;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+                text-align: center;
+            }
+            
+            .hero {
+                padding: 3rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            
             .crssnt-container {
-                padding: 15px;
+                padding: 1.5rem;
             }
         }
     </style>
@@ -101,12 +257,12 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section class="hero">
             <h1>Building Tomorrow's Leaders</h1>
             <p>We are a private equity firm focused on buyout and strategic investments in high-growth sectors across Malaysia and ASEAN. By partnering with innovative businesses, we drive transformation, foster growth, and create lasting value for investors and communities alike.</p>
         </section>
 
-        <section id="about" class="section">
+        <section class="section">
             <h2>Introduction</h2>
             <p class="section-intro">At Batai Capital Partners, we focus on buyout and strategic minority investments in thriving companies across ASEAN's most dynamic sectors. Our mission is to empower businesses to scale, achieve operational excellence, and create lasting value for shareholders.</p>
         </section>
@@ -121,6 +277,12 @@
             <p class="section-intro">BCP is finalising a landmark Co-GP partnership with a Global Investment Partner, unlocking RM500 million in private equity funds across Malaysia, Southeast Asia, and Europe. This collaboration strengthens our ability to drive growth and deliver value.</p>
         </section>
 
+
+        <section class="section">
+            <h2>Investment Mandate across Malaysia and ASEAN</h2>
+            <p class="section-intro">BCP is actively pursuing compelling private equity opportunities across ASEAN. If you have a promising business or investment prospect, we'd love to explore it with you. Let's grow together.</p>
+        </section>
+
         <!-- CRSSNT Feed Section -->
         <section class="crssnt-feed">
             <h2>Latest Updates</h2>
@@ -130,11 +292,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="section">
-            <h2>Investment Mandate across Malaysia and ASEAN</h2>
-            <p class="section-intro">BCP is actively pursuing compelling private equity opportunities across ASEAN. If you have a promising business or investment prospect, we'd love to explore it with you. Let's grow together.</p>
-        </section>
+        
     </main>
 
     <footer>
@@ -142,12 +300,17 @@
     </footer>
     
     <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
         // CRSSNT RSS Feed Loader
         document.addEventListener('DOMContentLoaded', function() {
             const feedUrl = 'https://crssnt.com/preview?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y';
             const feedContainer = document.getElementById('crssnt-content');
             
-            // First try with direct fetch (works if CORS allows)
             fetch(feedUrl)
                 .then(response => {
                     if (!response.ok) throw new Error('Network response was not ok');
@@ -163,31 +326,26 @@
                         const item = items[i];
                         const title = item.getElementsByTagName("title")[0]?.textContent || 'No title';
                         const description = item.getElementsByTagName("description")[0]?.textContent || '';
-                        const link = item.getElementsByTagName("link")[0]?.textContent || '#';
-                        const pubDate = item.getElementsByTagName("pubDate")[0]?.textContent || '';
                         
                         html += `
                             <div class="crssnt-item">
-                                <h3 class="crssnt-title"><a href="${link}" target="_blank" rel="noopener">${title}</a></h3>
+                                <div class="crssnt-title">${title}</div>
                                 <div class="crssnt-description">${description}</div>
-                                ${pubDate ? `<div class="crssnt-date">${new Date(pubDate).toLocaleDateString()}</div>` : ''}
                             </div>
                         `;
                     }
                     
-                    feedContainer.innerHTML = html || '<div class="crssnt-error">No updates found</div>';
+                    feedContainer.innerHTML = html || '<div class="crssnt-error">No updates available at this time</div>';
                 })
                 .catch(error => {
                     console.error('Error fetching RSS feed:', error);
                     feedContainer.innerHTML = `
                         <div class="crssnt-error">
-                            Could not load updates. <br>
-                            <a href="${feedUrl}" target="_blank">View updates directly</a>
+                            Updates are currently unavailable
                         </div>
                     `;
                 });
         });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>

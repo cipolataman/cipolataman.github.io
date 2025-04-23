@@ -1,23 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W40SWEW7DK"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'G-W40SWEW7DK');
-	</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W40SWEW7DK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W40SWEW7DK');
+    </script>
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batai Capital Partners</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="attached_assets/LOGO.png">
+    <style>
+        /* CRSSNT Feed Styling */
+        .crssnt-feed {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .crssnt-feed h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .crssnt-container {
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        iframe.crssnt-iframe {
+            border: none;
+            width: 100%;
+            min-height: 600px;
+        }
+        
+        @media (max-width: 768px) {
+            .crssnt-feed {
+                margin: 20px auto;
+            }
+            iframe.crssnt-iframe {
+                min-height: 400px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,7 +77,7 @@
 
         <section id="about" class="section">
             <h2>Introduction</h2>
-            <p class="section-intro">At Batai Capital Partners, we focus on buyout and strategic minority investments in thriving companies across ASEAN’s most dynamic sectors. Our mission is to empower businesses to scale, achieve operational excellence, and create lasting value for shareholders.</p>
+            <p class="section-intro">At Batai Capital Partners, we focus on buyout and strategic minority investments in thriving companies across ASEAN's most dynamic sectors. Our mission is to empower businesses to scale, achieve operational excellence, and create lasting value for shareholders.</p>
         </section>
 
         <section class="section">
@@ -60,18 +90,23 @@
             <p class="section-intro">BCP is finalising a landmark Co-GP partnership with a Global Investment Partner, unlocking RM500 million in private equity funds across Malaysia, Southeast Asia, and Europe. This collaboration strengthens our ability to drive growth and deliver value.</p>
         </section>
 
-        <section class="section">
-            <h2>Investment Mandate across Malaysia and ASEAN</h2>
-            <p class="section-intro">BCP is actively pursuing compelling private equity opportunities across ASEAN. If you have a promising business or investment prospect, we’d love to explore it with you. Let’s grow together.</p>
+        <!-- CRSSNT Feed Section -->
+        <section class="crssnt-feed">
+            <h2>Latest Updates</h2>
+            <div class="crssnt-container">
+                <iframe 
+                    src="https://crssnt.com/embed?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y" 
+                    class="crssnt-iframe"
+                    frameborder="0"
+                    loading="lazy">
+                </iframe>
+            </div>
         </section>
 
-<iframe 
-    src="https://crssnt.com/embed?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y" 
-    width="100%" 
-    height="600px"
-    frameborder="0">
-</iframe>
-	    
+        <section class="section">
+            <h2>Investment Mandate across Malaysia and ASEAN</h2>
+            <p class="section-intro">BCP is actively pursuing compelling private equity opportunities across ASEAN. If you have a promising business or investment prospect, we'd love to explore it with you. Let's grow together.</p>
+        </section>
     </main>
 
     <footer>

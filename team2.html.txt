@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Batai Capital Partners</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="attached_assets/LOGO.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="attached_assets/LOGO.png" alt="Batai Capital Partners">
+            </div>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" style="margin-top: 100px;">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="attached_assets/(1).png" alt="Iskandar Samad" class="team-photo">
+                    <h3>Iskandar Samad</h3>
+                    <p class="position">Co-Managing Partner</p>
+                    <p class="bio">Iskandar Samad, PhD is a transformational business leader with 15+ years of proven executive experience in P&L management, strategy, transformation and turnarounds, investments and M&A, business incubation, scaling, and disciplined value creation across a wide range of business sectors. </p>  
+
+                    <p class="bio">As President and CEO of MIMOS Berhad, Iskandar led the organization through a multi year transformation while managing sizeable P&L and accelerated commercialization of IT solutions and R&D outputs. Previously, he set up Jewel Digital Ventures (subsidiary of PNB) as CEO to drive fintech innovations for the PNB Group. At Astro Malaysia, he was the CEO of OTT Business and CEO of Tribe (HK) Limited, launching and scaling regional growth of streaming businesses across ASEAN, and driving corporate VC/M&A initiatives as VP Strategy. As VP at Axiata Berhad, he co-led transformation, M&A and JV initiatives in telco, digital, and e-commerce; while as Engagement Manager at McKinsey & Co. he drove large-scale corporate strategy and transformation projects across a range of sectors and geographies.</p>
+
+                    <p class="bio">Iskandar holds a PhD and a BA/MEng (1st Class) in Engineering, both from the University of Cambridge.</p>
+                </div>
+                <div class="team-member">
+                    <img src="attached_assets/(2).png" alt="Al-Azmy" class="team-photo">
+                    <h3>Al-Azmy Azizi</h3>
+                    <p class="position">Co-Managing Partner</p>
+                    <p class="bio">Al-Azmy Azizi is a seasoned investment professional with close to 20 years of experience executing and managing investments across Malaysia, ASEAN, and Middle Eastern markets. As Executive Director at SK Malaysia, he led investment initiatives in high-growth sectors including fintech, renewable energy, and sustainable waste management, while driving strategic partnerships and regional business development.</p>
+
+                    <p class="bio">Previously at Khazanah Nasional Berhad, he held progressively senior investment roles for over a decade, specializing in cross-border transactions across education, infrastructure, and Shariah-compliant finance. His portfolio included technology investments and operational turnarounds as well as portfolio M&M, demonstrating deep hands-on strategic steering and value creation capabilities. Al-Azmy began his career at PETRONAS, where he developed foundational expertise in energy trading and risk management.</p>
+
+                    <p class="bio">Al-Azmy received his education at the University of Cambridge (MPhil, Technology Policy) and UMIST (BEng, 1st Class Honors), and combines technical acumen with deep financial expertise. His investment philosophy balances rigorous financial discipline with sustainable growth principles, making him particularly effective in emerging market environments.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Batai Capital Partners. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

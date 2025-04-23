@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,55 @@
     <title>Team - Batai Capital Partners</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="attached_assets/LOGO.png">
+    <style>
+        /* CRSSNT Feed Styling - Matching previous implementation */
+        .crssnt-feed {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .crssnt-feed h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .crssnt-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 2rem;
+            border: 1px solid #e1e4e8;
+        }
+        .crssnt-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #f0f2f5;
+        }
+        .crssnt-item:last-child {
+            border-bottom: none;
+        }
+        .crssnt-title {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .crssnt-description {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        .crssnt-loading {
+            text-align: center;
+            color: #718096;
+            padding: 2rem;
+            font-style: italic;
+        }
+        .crssnt-error {
+            text-align: center;
+            color: #e53e3e;
+            padding: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -54,11 +102,64 @@
                 </div>
             </div>
         </section>
+
+        <!-- Added CRSSNT Feed Section - Matches previous implementation -->
+        <section class="crssnt-feed">
+            <h2>Latest Updates</h2>
+            <div class="crssnt-container">
+                <div id="crssnt-content">
+                    <div class="crssnt-loading">Loading updates...</div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Batai Capital Partners. All rights reserved.</p>
     </footer>
+    
+    <script>
+        // CRSSNT RSS Feed Loader - Same as previous implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            const feedUrl = 'https://crssnt.com/preview?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y';
+            const feedContainer = document.getElementById('crssnt-content');
+            
+            fetch(feedUrl)
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.text();
+                })
+                .then(str => {
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(str, "text/xml");
+                    const items = xmlDoc.getElementsByTagName("item");
+                    let html = '';
+                    
+                    for (let i = 0; i < items.length; i++) {
+                        const item = items[i];
+                        const title = item.getElementsByTagName("title")[0]?.textContent || 'No title';
+                        const description = item.getElementsByTagName("description")[0]?.textContent || '';
+                        
+                        html += `
+                            <div class="crssnt-item">
+                                <div class="crssnt-title">${title}</div>
+                                <div class="crssnt-description">${description}</div>
+                            </div>
+                        `;
+                    }
+                    
+                    feedContainer.innerHTML = html || '<div class="crssnt-error">No updates available at this time</div>';
+                })
+                .catch(error => {
+                    console.error('Error fetching RSS feed:', error);
+                    feedContainer.innerHTML = `
+                        <div class="crssnt-error">
+                            Updates are currently unavailable
+                        </div>
+                    `;
+                });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

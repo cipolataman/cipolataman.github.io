@@ -1,241 +1,53 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Batai Capital Partners - Private equity firm specializing in Shariah-compliant investments across ASEAN markets">
+    
+    <!-- Google / Search Engine Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.bataicapital.com" />
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W40SWEW7DK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-W40SWEW7DK');
+        gtag('config', 'G-W40SWEW7DK', { 
+            'anonymize_ip': true,
+            'cookie_flags': 'SameSite=None;Secure'
+        });
     </script>
     
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batai Capital Partners</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="attached_assets/LOGO.png">
-    <style>
-        /* Main Styles */
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .logo img {
-            height: 50px;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 2rem;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover, .nav-links a.active {
-            color: #0066cc;
-        }
-        
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-        }
-        
-        .bar {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color: #2c3e50;
-            margin: 5px 0;
-            transition: all 0.3s ease;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 4rem 0;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('attached_assets/hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            color: #4a5568;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .section {
-            margin-bottom: 3rem;
-        }
-        
-        .section h2 {
-            color: #2c3e50;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        
-        .section-intro {
-            color: #4a5568;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        footer {
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        
-        /* CRSSNT Feed Styling */
-        .crssnt-feed {
-            max-width: 1000px;
-            margin: 4rem auto;
-        }
-        
-        .crssnt-feed h2 {
-            color: #2c3e50;
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        .crssnt-container {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
-            padding: 2rem;
-            border: 1px solid #e1e4e8;
-        }
-        
-        .crssnt-item {
-            padding: 1.5rem 0;
-            border-bottom: 1px solid #f0f2f5;
-        }
-        
-        .crssnt-item:last-child {
-            border-bottom: none;
-        }
-        
-        .crssnt-title {
-            color: #2c3e50;
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        
-        .crssnt-description {
-            color: #4a5568;
-            line-height: 1.7;
-        }
-        
-        .crssnt-loading {
-            text-align: center;
-            color: #718096;
-            padding: 2rem;
-            font-style: italic;
-        }
-        
-        .crssnt-error {
-            text-align: center;
-            color: #e53e3e;
-            padding: 2rem;
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-            
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                flex-direction: column;
-                background: #fff;
-                transition: all 0.3s ease;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                margin: 1rem 0;
-                text-align: center;
-            }
-            
-            .hero {
-                padding: 3rem 1rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .section h2 {
-                font-size: 1.5rem;
-            }
-            
-            .crssnt-container {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="attached_assets/LOGO.png" as="image" type="image/png">
+    
+    <!-- Favicon (Modern Multi-Format) -->
+    <link rel="icon" href="attached_assets/LOGO.png" type="image/png">
+    <link rel="icon" href="attached_assets/favicon.ico" sizes="any">
+    <link rel="icon" href="attached_assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="attached_assets/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <!-- Title -->
+    <title>Batai Capital Partners | Shariah-Compliant Private Equity Investments</title>
+    
+    <!-- Social Media Meta (Optional) -->
+    <meta property="og:title" content="Batai Capital Partners">
+    <meta property="og:description" content="Specializing in Shariah-compliant private equity investments across ASEAN markets">
+    <meta property="og:image" content="https://www.bataicapital.com/attached_assets/social-preview.jpg">
+    <meta property="og:url" content="https://www.bataicapital.com">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
+    
 <body>
     <header>
         <nav>
@@ -248,7 +60,7 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-links">
-                <li><a href="index3.html" class="active">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -257,95 +69,36 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Building Tomorrow's Leaders</h1>
-            <p>We are a private equity firm focused on buyout and strategic investments in high-growth sectors across Malaysia and ASEAN. By partnering with innovative businesses, we drive transformation, foster growth, and create lasting value for investors and communities alike.</p>
-        </section>
+	<section id="home" class="hero">
+    	<h1>Building Tomorrow's Market Leaders</h1>
+    	<p>We are a private equity firm dedicated to transformative buyouts and strategic investments in high-growth sectors across Malaysia and ASEAN. By partnering with ambitious entrepreneurs and visionary businesses, we aim to accelerate growth, unlock potential, and create enduring value for investors and communities.</p>
+	</section>
 
-        <section class="section">
-            <h2>Introduction</h2>
-            <p class="section-intro">At Batai Capital Partners, we focus on buyout and strategic minority investments in thriving companies across ASEAN's most dynamic sectors. Our mission is to empower businesses to scale, achieve operational excellence, and create lasting value for shareholders.</p>
-        </section>
+	<section id="about" class="section">
+   	<h2>Accelerating Growth Through Strategic Partnerships</h2>
+   	<p class="section-intro">At Batai Capital Partners, we invest in high-performing companies across Southeast Asia’s most dynamic sectors. With a focus on buyouts and significant minority stakes, we help businesses scale sustainably, achieve operational excellence, and deliver strong long-term returns for shareholders.</p>
+	</section>
 
-        <section class="section">
-            <h2>Committed to Responsible Shariah Based Investing</h2>
-            <p class="section-intro">We are dedicated to delivering investment solutions rooted in Shariah principles. Our approach balances financial growth with ethical responsibility, creating a portfolio that aligns with both prosperity and purpose. With deep market expertise and a commitment to compliance, we guide investors through the nuances of ethical investing. Together, we aim to define success with integrity and impact.</p>
-        </section>
+	<section class="section">
+    	<h2>Guided by Purpose, Driven by Performance</h2>
+    	<p class="section-intro">We are committed to Shariah-compliant investing that aligns financial success with ethical responsibility. Our portfolio is to reflect a balance of growth and integrity—backed by deep market expertise, disciplined execution, and adherence to Shariah principles.</p>
+	</section>
 
-        <section class="section">
-            <h2>Forging Strategic Alliances</h2>
-            <p class="section-intro">BCP is finalising a landmark Co-GP partnership with a Global Investment Partner, unlocking RM500 million in private equity funds across Malaysia, Southeast Asia, and Europe. This collaboration strengthens our ability to drive growth and deliver value.</p>
-        </section>
+	<section class="section">
+    	<h2>Partnering for Scale and Impact</h2>
+    	<p class="section-intro">Batai Capital Partners is finalising a landmark co-led General Partnership with a leading global investment firm, unlocking RM500 million in private equity capital. The joint alliance strengthens our capacity to execute larger transactions and support a regional portfolio across Malaysia, ASEAN, and Europe. These funds are earmarked for a target deployment period between 2025 to 2030.</p>
+	</section>
 
-
-        <section class="section">
-            <h2>Investment Mandate across Malaysia and ASEAN</h2>
-            <p class="section-intro">BCP is actively pursuing compelling private equity opportunities across ASEAN. If you have a promising business or investment prospect, we'd love to explore it with you. Let's grow together.</p>
-        </section>
-
-        <!-- CRSSNT Feed Section -->
-        <section class="crssnt-feed">
-            <h2>Latest Updates</h2>
-            <div class="crssnt-container">
-                <div id="crssnt-content">
-                    <div class="crssnt-loading">Loading updates...</div>
-                </div>
-            </div>
-        </section>
-        
+	<section class="section">
+    	<h2>Investing Across ASEAN’s Growth Frontier</h2>
+    	<p class="section-intro">From emerging market leaders to cross-border expansion stories, we are actively seeking investment opportunities in country or across the region. If you’re building or growing something exceptional, we would love to explore how we can grow together.</p>
+	</section>
+	
     </main>
 
     <footer>
         <p>&copy; 2025 Batai Capital Partners. All rights reserved.</p>
     </footer>
-    
-    <script>
-        // Mobile Menu Toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        // CRSSNT RSS Feed Loader
-        document.addEventListener('DOMContentLoaded', function() {
-            const feedUrl = 'https://crssnt.com/preview?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y';
-            const feedContainer = document.getElementById('crssnt-content');
-            
-            fetch(feedUrl)
-                .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    return response.text();
-                })
-                .then(str => {
-                    const parser = new DOMParser();
-                    const xmlDoc = parser.parseFromString(str, "text/xml");
-                    const items = xmlDoc.getElementsByTagName("item");
-                    let html = '';
-                    
-                    for (let i = 0; i < items.length; i++) {
-                        const item = items[i];
-                        const title = item.getElementsByTagName("title")[0]?.textContent || 'No title';
-                        const description = item.getElementsByTagName("description")[0]?.textContent || '';
-                        
-                        html += `
-                            <div class="crssnt-item">
-                                <div class="crssnt-title">${title}</div>
-                                <div class="crssnt-description">${description}</div>
-                            </div>
-                        `;
-                    }
-                    
-                    feedContainer.innerHTML = html || '<div class="crssnt-error">No updates available at this time</div>';
-                })
-                .catch(error => {
-                    console.error('Error fetching RSS feed:', error);
-                    feedContainer.innerHTML = `
-                        <div class="crssnt-error">
-                            Updates are currently unavailable
-                        </div>
-                    `;
-                });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

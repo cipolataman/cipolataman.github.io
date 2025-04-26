@@ -260,26 +260,22 @@ footer {
     text-align: left; /* Left-aligns all text */
     text-align-last: left; /* Left-aligns the last line */
     hyphens: none; /* Disables automatic hyphenation */
-
-    /* Enhanced paragraph spacing */
-    p {
-        margin-top: 0;
-        margin-bottom: 1.25em; /* Perfect single-line spacing */
-        padding: 0;
-        orphans: 3; /* Prevents single words on last line */
-        widows: 3; /* Prevents single words on new page/column */
-    }
-
-    /* First paragraph spacing adjustment */
-    p:first-child {
-        margin-top: 0.5em;
-    }
-
-    /* Last paragraph spacing adjustment */
-    p:last-child {
-        margin-bottom: 0;
-    }
     
+}
+
+/* For paragraphs INSIDE the bio - CRITICAL FIX */
+.team-member .bio p {
+    margin-top: 0;
+    margin-bottom: 1.25em; /* Professional spacing */
+    padding: 0;
+}
+
+/* Remove extra space from first/last paragraphs */
+.team-member .bio p:first-child {
+    margin-top: 0;
+}
+.team-member .bio p:last-child {
+    margin-bottom: 0;
 }
 
 .team-grid {

@@ -7,6 +7,20 @@
     <title>Contact - Batai Capital Partners</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="attached_assets/Weblogo.png">
+        <!-- Calendly script -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <style>
+        .calendly-container {
+            min-height: 700px; /* Adjust height as needed */
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .calendly-container {
+                min-height: 900px; /* Taller for mobile */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,6 +58,22 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7270777257286!2d101.68983911120993!3d3.1664255967955963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc497714c5405d%3A0xc1ccd6f8dd823e0a!2sWORQ%20Sunway%20Putra!5e0!3m2!1sen!2smy!4v1746106414961!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+    <section class="calendly-section">
+        <h2>Schedule a Consultation</h2>
+        <div class="calendly-container">
+            <!-- Replace with your Calendly link -->
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/iskandar-bataicapital" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+        </div>
+    </section>
+    
+    <!-- Alternative: Button trigger -->
+    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/30min'});">
+        Book a Meeting
+    </button>
+        
     </main>
 
     <footer>

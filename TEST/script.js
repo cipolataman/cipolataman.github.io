@@ -66,12 +66,32 @@ document.addEventListener('DOMContentLoaded', () => {
     updateActiveLink();
 
     // Team bio toggle functionality
-    document.querySelectorAll('.toggle-bio').forEach(button => {
+    document.querySelectorAll('.read-more').forEach(button => {
         button.addEventListener('click', function() {
-            const bio = this.parentElement.querySelector('.bio');
-            if (bio) {
-                bio.classList.toggle('expanded');
-                this.textContent = bio.classList.contains('expanded') ? 'Hide Bio' : 'Read Full Bio';
+            const bioFull = this.closest('.team-card').querySelector('.bio-full');
+            if (bioFull) {
+                bioFull.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    document.querySelectorAll('.close-bio').forEach(button => {
+        button.addEventListener('click', function() {
+            const bioFull = this.closest('.bio-full');
+            if (bioFull) {
+                bioFull.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // Close bio when clicking outside content
+    document.querySelectorAll('.bio-full').forEach(bio => {
+        bio.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = '';
             }
         });
     });
@@ -84,60 +104,3 @@ document.addEventListener('DOMContentLoaded', () => {
         counters.forEach(counter => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
-            const increment = target / speed;
-            
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(animateCounters, 1);
-            } else {
-                counter.innerText = target;
-            }
-        });
-    }
-    
-    // Initialize counters if they exist on page
-    if (document.querySelector('.counter')) {
-        animateCounters();
-    }
-
-    // CRSSNT RSS Feed Loader
-    const crssntFeed = document.getElementById('crssnt-content');
-    if (crssntFeed) {
-        const feedUrl = 'https://crssnt.com/preview?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y';
-        
-        fetch(feedUrl)
-            .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
-                return response.text();
-            })
-            .then(str => {
-                const parser = new DOMParser();
-                const xmlDoc = parser.parseFromString(str, "text/xml");
-                const items = xmlDoc.getElementsByTagName("item");
-                let html = '';
-                
-                for (let i = 0; i < Math.min(items.length, 5); i++) {
-                    const item = items[i];
-                    const title = item.getElementsByTagName("title")[0]?.textContent || 'No title';
-                    const description = item.getElementsByTagName("description")[0]?.textContent || '';
-                    
-                    html += `
-                        <div class="crssnt-item">
-                            <div class="crssnt-title">${title}</div>
-                            <div class="crssnt-description">${description}</div>
-                        </div>
-                    `;
-                }
-                
-                crssntFeed.innerHTML = html || '<div class="crssnt-error">No updates available at this time</div>';
-            })
-            .catch(error => {
-                console.error('Error fetching RSS feed:', error);
-                crssntFeed.innerHTML = `
-                    <div class="crssnt-error">
-                        Updates are currently unavailable. Please check back later.
-                    </div>
-                `;
-            });
-    }
-});

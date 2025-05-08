@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Counter animation for stats
     function animateCounters() {
         const counters = document.querySelectorAll('.counter');
-        const speed = 200;
+        const speed = 10;
         
         counters.forEach(counter => {
             const target = +counter.getAttribute('data-target');

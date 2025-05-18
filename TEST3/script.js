@@ -66,35 +66,32 @@ document.addEventListener('DOMContentLoaded', () => {
     updateActiveLink();
 
     // Team bio modal functionality
- // Replace the existing bio modal code in script.js with this:
-
-// Team bio modal functionality
-document.querySelectorAll('.read-more').forEach(button => {
-    button.addEventListener('click', function() {
-        const modal = this.closest('.team-card').querySelector('.bio-modal');
-        document.body.classList.add('modal-open');
-        modal.classList.add('active');
+    document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.team-card').querySelector('.bio-modal');
+            document.body.classList.add('modal-open');
+            modal.classList.add('active');
+        });
     });
-});
 
-document.querySelectorAll('.close-bio').forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.stopPropagation();
-        const modal = this.closest('.bio-modal');
-        modal.classList.remove('active');
-        document.body.classList.remove('modal-open');
-    });
-});
-
-// Close modal when clicking outside content
-document.querySelectorAll('.bio-modal').forEach(modal => {
-    modal.addEventListener('click', function(e) {
-        if (e.target === this) {
-            this.classList.remove('active');
+    document.querySelectorAll('.close-bio').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const modal = this.closest('.bio-modal');
+            modal.classList.remove('active');
             document.body.classList.remove('modal-open');
-        }
+        });
     });
-});
+
+    // Close modal when clicking outside content
+    document.querySelectorAll('.bio-modal').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.classList.remove('modal-open');
+            }
+        });
+    });
 
     // Counter animation for stats
     function animateCounters() {

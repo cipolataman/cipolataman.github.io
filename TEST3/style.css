@@ -698,7 +698,7 @@ footer {
     }
     
     .stat-item {
-        min-width: 130px;
+        min-width: 150px;
         padding: 1.25rem 1.5rem;
     }
     
@@ -748,7 +748,7 @@ footer {
     }
     
     .stat-item {
-        min-width: 120px;
+        min-width: 150px;
         padding: 1rem;
     }
     

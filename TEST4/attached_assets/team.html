@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Batai Capital Partners</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="attached_assets/Weblogo.png">
+    <style>
+        /* Team Profile Styling */
+        .team-member {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #e1e4e8;
+        }
+        
+        .team-member h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .position {
+            color: #0066cc;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .bio {
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            display: none; /* Initially hidden */
+        }
+        
+        .bio.expanded {
+            display: block; /* Show when expanded */
+        }
+        
+        .toggle-bio {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle-bio:hover {
+            background: #0052a3;
+        }
+        
+        /* CRSSNT Feed Styling - Matching previous implementation */
+        .crssnt-feed {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .crssnt-feed h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .crssnt-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 2rem;
+            border: 1px solid #e1e4e8;
+        }
+        .crssnt-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #f0f2f5;
+        }
+        .crssnt-item:last-child {
+            border-bottom: none;
+        }
+        .crssnt-title {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .crssnt-description {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        .crssnt-loading {
+            text-align: center;
+            color: #718096;
+            padding: 2rem;
+            font-style: italic;
+        }
+        .crssnt-error {
+            text-align: center;
+            color: #e53e3e;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="attached_assets/LOGO.png" alt="Batai Capital Partners">
+            </div>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="portfolio.html">Approach</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" style="margin-top: 100px;">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="attached_assets/(1).png" alt="Iskandar Samad" class="team-photo">
+                    <h3>Dr Iskandar Samad</h3>
+                    <p class="position">Co-Managing Partner</p>
+                    <div class="bio">
+                        <p>Iskandar Samad, PhD is an established business leader with 15+ years of proven executive experience in P&L management, strategy, transformation and turnarounds, investments and M&A, business incubation, scaling, and disciplined value creation across a wide range of business sectors.</p>  
+                        <p>As President and CEO of MIMOS Berhad, Iskandar led the organisation through a multi year transformation while managing sizeable P&L and an accelerated commercialisation of IT solutions and R&D outputs. Previously, he set up Jewel Digital Ventures (subsidiary of PNB) as CEO to drive fintech innovations for the PNB Group. At Astro Malaysia, he was the CEO of OTT Business and CEO of Tribe (HK) Limited, where he launched and scaled streaming businesses across ASEAN, and drove corporate VC/M&A initiatives as VP Strategy. As VP at Axiata Berhad, he co-led transformation, M&A and JV initiatives in telco, digital, and e-commerce; while as Engagement Manager at McKinsey & Co. he drove large-scale corporate strategy and transformation projects across a range of sectors and geographies.</p>
+                        <p>Iskandar holds a BA/MEng (Double First Class) in Engineering, and a PhD in Microelectronics Engineering, both from the University of Cambridge.</p>
+                    </div>
+                    <button class="toggle-bio">Show Profile</button>
+                </div>
+                <div class="team-member">
+                    <img src="attached_assets/(2).png" alt="Al-Azmy" class="team-photo">
+                    <h3>Al-Azmy Azizi</h3>
+                    <p class="position">Co-Managing Partner</p>
+                    <div class="bio">
+                        <p>Al-Azmy Azizi is a seasoned investment professional with close to 20 years of experience executing and managing investments across Malaysia, ASEAN, and Middle Eastern markets. As Executive Director at SK Malaysia, he led investment initiatives in high-growth sectors including fintech, renewable energy, and sustainable waste management, while driving strategic partnerships and regional business development.</p>
+                        <p>Previously at Khazanah Nasional Berhad, he held progressively senior investment roles for over a decade, specializing in cross-border transactions across education, infrastructure, and Shariah-compliant finance. His portfolio included technology investments and operational turnarounds as well as portfolio M&M, demonstrating deep hands-on strategic steering and value creation capabilities. Al-Azmy began his career at PETRONAS, where he developed foundational expertise in energy trading and risk management.</p>
+                        <p>Al-Azmy received his education at the University of Cambridge (MPhil, Technology Policy) and UMIST (BEng, 1st Class Honors), and combines technical acumen with deep financial expertise. His investment philosophy balances rigorous financial discipline with sustainable growth principles, making him particularly effective in emerging market environments.</p>
+                    </div>
+                    <button class="toggle-bio">Show Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added CRSSNT Feed Section - Matches previous implementation -->
+        <section class="crssnt-feed">
+            <h2>Brief Updates</h2>
+            <div class="crssnt-container">
+                <div id="crssnt-content">
+                    <div class="crssnt-loading">Loading updates...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Batai Capital Partners. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Toggle bio visibility
+        document.querySelectorAll('.toggle-bio').forEach(button => {
+            button.addEventListener('click', function() {
+                const bio = this.previousElementSibling;
+                bio.classList.toggle('expanded');
+                this.textContent = bio.classList.contains('expanded') ? 'Hide Profile' : 'Show Profile';
+            });
+        });
+
+        // CRSSNT RSS Feed Loader - Same as previous implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            const feedUrl = 'https://crssnt.com/preview?id=1ByB4f1cAXUZ-RnXUuJOwmEHexln7rqCsP7Z_bBrDB4Y';
+            const feedContainer = document.getElementById('crssnt-content');
+            
+            fetch(feedUrl)
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.text();
+                })
+                .then(str => {
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(str, "text/xml");
+                    const items = xmlDoc.getElementsByTagName("item");
+                    let html = '';
+                    
+                    for (let i = 0; i < items.length; i++) {
+                        const item = items[i];
+                        const title = item.getElementsByTagName("title")[0]?.textContent || 'No title';
+                        const description = item.getElementsByTagName("description")[0]?.textContent || '';
+                        
+                        html += `
+                            <div class="crssnt-item">
+                                <div class="crssnt-title">${title}</div>
+                                <div class="crssnt-description">${description}</div>
+                            </div>
+                        `;
+                    }
+                    
+                    feedContainer.innerHTML = html || '<div class="crssnt-error">No updates available at this time</div>';
+                })
+                .catch(error => {
+                    console.error('Error fetching RSS feed:', error);
+                    feedContainer.innerHTML = `
+                        <div class="crssnt-error">
+                            Updates are currently unavailable
+                        </div>
+                    `;
+                });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

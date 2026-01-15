@@ -919,7 +919,7 @@ html {
     }
     
     .logo-image {
-        height: 50px;  /* Adjust this for mobile if needed */
+        height: 70px;  /* Adjust this for mobile if needed */
     }
     
     .focus-grid {
@@ -955,7 +955,7 @@ html {
         gap: 3rem;
     }
     .logo-image {
-        height: 50px;  /* Adjust this for mobile if needed */
+        height: 70px;  /* Adjust this for mobile if needed */
     }
     
 }
@@ -1005,7 +1005,7 @@ html {
         padding: 1.5rem;
     }
     .logo-image {
-        height: 50px;  /* Adjust this for mobile if needed */
+        height: 70px;  /* Adjust this for mobile if needed */
     }
 
     .focus-grid {

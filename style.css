@@ -931,7 +931,7 @@ img { display: block; height: auto; }
         --header-h: 70px;
         --header-h-scrolled: 70px;
         --logo-h:65px;
-        --logo-h-scrolled: 42px;
+        --logo-h-scrolled: 65px;
     }
 
     .menu-toggle { display: flex; }
@@ -967,7 +967,7 @@ img { display: block; height: auto; }
 }
 
 @media (max-width: 420px) {
-    :root { --logo-h: 45px; --logo-h-scrolled: 36px; }
+    :root { --logo-h: 45px; --logo-h-scrolled: 45px; }
 }
 
 @media (max-width: 620px) {

@@ -3,51 +3,81 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Approach - Batai Capital Partners</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>Approach | Batai Capital Partners</title>
+    <meta name="description" content="Our investment approach — strategic partnerships built on deep sector expertise, operational excellence, Shariah compliance, and sustainable value creation across ASEAN.">
+    <link rel="canonical" href="https://www.bataicapital.com/portfolio.html">
+    <meta name="theme-color" content="#173660">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Batai Capital Partners">
+    <meta property="og:title" content="Approach | Batai Capital Partners">
+    <meta property="og:description" content="Strategic partnerships built on deep sector expertise, operational excellence, and sustainable value creation.">
+    <meta property="og:url" content="https://www.bataicapital.com/portfolio.html">
+    <meta property="og:image" content="https://www.bataicapital.com/attached_assets/LOGO.png">
+    <meta name="twitter:card" content="summary">
+
     <link rel="icon" type="image/png" href="attached_assets/Weblogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W40SWEW7DK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W40SWEW7DK');
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Shared header — keep identical across all pages ===== -->
     <header class="site-header">
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Primary">
             <div class="logo">
-                <img src="attached_assets/LOGO.png" alt="Batai Capital Partners" class="logo-image">
+                <a href="index.html" aria-label="Batai Capital Partners — home">
+                    <img src="attached_assets/LOGO.png" alt="Batai Capital Partners" class="logo-image" width="2826" height="840">
+                </a>
             </div>
-            <div class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="portfolio.html" class="nav-link active">Approach</a></li>
-                <li><a href="contact.html" class="nav-link contact-link">Contact</a></li>
+                <li><a href="portfolio.html" class="nav-link active" aria-current="page">Approach</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section approach-hero">
+    <main id="main">
+        <section class="hero-section hero-compact approach-hero">
             <div class="hero-content">
                 <h1 class="hero-title">Our Investment Approach</h1>
                 <p class="hero-subtitle">Strategic partnerships built on deep sector expertise, operational excellence, and sustainable value creation</p>
             </div>
-            <div class="hero-background"></div>
+            <div class="hero-background" aria-hidden="true"></div>
         </section>
 
         <section class="approach-section">
-            <div class="section-content">
-                <h2 class="section-title">How We Create Value</h2>
-                <p class="section-intro">Our investment philosophy combines rigorous financial discipline with hands-on partnership to accelerate growth and maximise returns for all stakeholders.</p>
-                
+            <div class="wrap">
+                <div class="section-head fade-in">
+                    <h2 class="section-title">How We Create Value</h2>
+                    <p class="section-intro">Our investment philosophy combines rigorous financial discipline with hands-on partnership to accelerate growth and maximise returns for all stakeholders.</p>
+                </div>
+
                 <div class="approach-grid">
-                    <div class="approach-card fade-in">
-                        <div class="approach-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Approach card — duplicate this block to add another -->
+                    <article class="approach-card fade-in">
+                        <div class="approach-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -56,53 +86,53 @@
                         </div>
                         <h3 class="approach-card-title">Strategic Partnerships</h3>
                         <p class="approach-card-text">We work closely with founders and management teams as true partners, providing not just capital but strategic guidance, operational expertise, and access to our extensive network across Southeast Asia.</p>
-                    </div>
+                    </article>
 
-                    <div class="approach-card fade-in">
-                        <div class="approach-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <article class="approach-card fade-in">
+                        <div class="approach-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
                                 <line x1="1" y1="10" x2="23" y2="10"></line>
                             </svg>
                         </div>
                         <h3 class="approach-card-title">Sector Specialisation</h3>
                         <p class="approach-card-text">We focus on high-growth sectors where we have deep expertise, including technology, renewable energy, healthcare, education, retail/consumer, and business services across ASEAN markets.</p>
-                    </div>
+                    </article>
 
-                    <div class="approach-card fade-in">
-                        <div class="approach-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <article class="approach-card fade-in">
+                        <div class="approach-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                             </svg>
                         </div>
                         <h3 class="approach-card-title">Operational Excellence</h3>
                         <p class="approach-card-text">Our team brings hands-on experience in scaling businesses, optimising operations, and implementing best practices to drive sustainable growth and profitability.</p>
-                    </div>
+                    </article>
 
-                    <div class="approach-card fade-in">
-                        <div class="approach-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <article class="approach-card fade-in">
+                        <div class="approach-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 8v8M8 12h8"></path>
                             </svg>
                         </div>
                         <h3 class="approach-card-title">Value Creation</h3>
                         <p class="approach-card-text">We implement value creation plans focused on revenue growth, margin expansion, operational improvements, and strategic initiatives to enhance company performance.</p>
-                    </div>
+                    </article>
 
-                    <div class="approach-card fade-in">
-                        <div class="approach-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <article class="approach-card fade-in">
+                        <div class="approach-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                             </svg>
                         </div>
                         <h3 class="approach-card-title">Shariah Compliance</h3>
                         <p class="approach-card-text">All our investments adhere to Shariah principles, ensuring ethical practices while delivering competitive financial returns and sustainable impact.</p>
-                    </div>
+                    </article>
 
-                    <div class="approach-card fade-in">
-                        <div class="approach-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <article class="approach-card fade-in">
+                        <div class="approach-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                                 <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                                 <line x1="12" y1="22.08" x2="12" y2="12"></line>
@@ -110,69 +140,86 @@
                         </div>
                         <h3 class="approach-card-title">Regional Expertise</h3>
                         <p class="approach-card-text">With deep roots and extensive networks across ASEAN, we provide unique market insights and help portfolio companies navigate regional expansion opportunities.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="content-section alt-bg fade-in">
-            <div class="section-content">
-                <h2 class="section-title">Investment Focus Areas</h2>
-                <p class="section-text">We target investments in companies with strong growth potential, defensible market positions, and capable management teams across these key sectors:</p>
-                
-                <div class="focus-grid">
+        <section class="content-section alt-bg">
+            <div class="wrap">
+                <div class="section-head fade-in">
+                    <h2 class="section-title">Investment Focus Areas</h2>
+                    <p class="section-intro">We target investments in companies with strong growth potential, defensible market positions, and capable management teams across these key sectors:</p>
+                </div>
+
+                <div class="focus-grid fade-in">
+                    <!-- Focus area — duplicate this block to add a sector -->
                     <div class="focus-card">
-                        <h4 class="focus-title">Technology & Digital</h4>
+                        <h3 class="focus-title">Technology &amp; Digital</h3>
                         <p class="focus-text">Enterprise software, fintech, e-commerce, and digital transformation enablers</p>
                     </div>
-                    
+
                     <div class="focus-card">
-                        <h4 class="focus-title">Energy Transition and Renewables</h4>
+                        <h3 class="focus-title">Energy Transition and Renewables</h3>
                         <p class="focus-text">Proven business models in sustainable and renewable energy</p>
                     </div>
-                    
+
                     <div class="focus-card">
-                        <h4 class="focus-title">Healthcare & Education</h4>
+                        <h3 class="focus-title">Healthcare &amp; Education</h3>
                         <p class="focus-text">Quality healthcare delivery, medical technology, and education services</p>
                     </div>
-                    
+
                     <div class="focus-card">
-                        <h4 class="focus-title">Consumer & Retail</h4>
-                        <p class="focus-text">Consumer goods, retail platforms, F&B, and lifestyle services</p>
+                        <h3 class="focus-title">Consumer &amp; Retail</h3>
+                        <p class="focus-text">Consumer goods, retail platforms, F&amp;B, and lifestyle services</p>
                     </div>
 
                     <div class="focus-card">
-                        <h4 class="focus-title">Business Services</h4>
-                        <p class="focus-text">Reliable and high quality support to help businesses operate efficiently, and grow sustainably. </p>
+                        <h3 class="focus-title">Business Services</h3>
+                        <p class="focus-text">Reliable and high quality support to help businesses operate efficiently, and grow sustainably.</p>
                     </div>
 
                     <div class="focus-card">
-                        <h4 class="focus-title">Industrial & Logistics</h4>
+                        <h3 class="focus-title">Industrial &amp; Logistics</h3>
                         <p class="focus-text">Manufacturing, supply chain solutions, and industrial technology</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section fade-in">
-
-
-                <div class="cta-content">
+        <!-- ===== Shared closing CTA ===== -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <div>
                     <h2 class="cta-title">Interested in Working With Us?</h2>
                     <p class="cta-text">Connect with our team to explore partnership opportunities.</p>
-                    <a href="contact.html" class="cta-button large">Get in Touch</a>
                 </div>
-
-
+                <a href="contact.html" class="cta-button large">Get in Touch</a>
+            </div>
         </section>
     </main>
 
+    <!-- ===== Shared footer — keep identical across all pages ===== -->
     <footer class="site-footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2025 Batai Capital Partners. All rights reserved.</p>
+            <div class="footer-top">
+                <a href="index.html" aria-label="Batai Capital Partners — home">
+                    <img src="attached_assets/LOGO.png" alt="Batai Capital Partners" class="footer-logo" width="2826" height="840">
+                </a>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Approach</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span data-year>2025</span> Batai Capital Partners. All rights reserved.</p>
+                <p class="footer-note">Kuala Lumpur, Malaysia</p>
+            </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

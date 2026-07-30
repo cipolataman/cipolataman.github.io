@@ -3,84 +3,111 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Batai Capital Partners</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>Contact | Batai Capital Partners</title>
+    <meta name="description" content="Contact Batai Capital Partners — Unit 31-02, Sunway Putra Tower, Kuala Lumpur. Connect with our team to explore partnership and investment opportunities.">
+    <link rel="canonical" href="https://www.bataicapital.com/contact.html">
+    <meta name="theme-color" content="#173660">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Batai Capital Partners">
+    <meta property="og:title" content="Contact | Batai Capital Partners">
+    <meta property="og:description" content="Connect with our team to explore partnership opportunities and investment possibilities.">
+    <meta property="og:url" content="https://www.bataicapital.com/contact.html">
+    <meta property="og:image" content="https://www.bataicapital.com/attached_assets/LOGO.png">
+    <meta name="twitter:card" content="summary">
+
     <link rel="icon" type="image/png" href="attached_assets/Weblogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W40SWEW7DK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W40SWEW7DK');
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Shared header — keep identical across all pages ===== -->
     <header class="site-header">
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Primary">
             <div class="logo">
-                <img src="attached_assets/LOGO.png" alt="Batai Capital Partners" class="logo-image">
+                <a href="index.html" aria-label="Batai Capital Partners — home">
+                    <img src="attached_assets/LOGO.png" alt="Batai Capital Partners" class="logo-image" width="2826" height="840">
+                </a>
             </div>
-            <div class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="team.html" class="nav-link">Team</a></li>
                 <li><a href="portfolio.html" class="nav-link">Approach</a></li>
-                <li><a href="contact.html" class="nav-link active contact-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta active" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section contact-hero">
+    <main id="main">
+        <section class="hero-section hero-compact contact-hero">
             <div class="hero-content">
                 <h1 class="hero-title">Get in Touch</h1>
                 <p class="hero-subtitle">Connect with our team to explore partnership opportunities and investment possibilities</p>
             </div>
-            <div class="hero-background"></div>
+            <div class="hero-background" aria-hidden="true"></div>
         </section>
 
         <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-info fade-in">
-                    <h2 class="contact-title">Who we are</h2>
-                    
-                    <div class="contact-card">
-                        <h3 class="office-title">Malaysia Entity</h3>
-                        <div class="office-info">
-                            <p><strong>Batai Capital Partners Sdn Bhd</strong></p>
-                            <p>202501006563 (1607977-M)</p>
-                            <p>Registered as PEMC by Securities Commission Malaysia, Reg: VCPE/133/2025</p>
+            <div class="wrap">
+                <h2 class="contact-title fade-in">Who we are</h2>
+
+                <div class="contact-container">
+                    <div class="contact-info fade-in">
+                        <div class="contact-card">
+                            <h3 class="office-title">Malaysia Entity</h3>
+                            <div class="office-info">
+                                <p><strong>Batai Capital Partners Sdn Bhd</strong></p>
+                                <p>202501006563 (1607977-M)</p>
+                                <p>Registered as PEMC by Securities Commission Malaysia, Reg: VCPE/133/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3 class="office-title">International Entities</h3>
+                            <div class="office-info">
+                                <p><strong>Batai Capital Partners Ltd.</strong></p>
+                                <p>Registration No.: LL21467</p>
+                            </div>
+                            <div class="office-info">
+                                <p><strong>Batai Capital Management Ltd.</strong></p>
+                                <p>Registration No.: LL21725</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-card">
-                        <h3 class="office-title">International Entities</h3>
-                        <div class="office-info">
-                            <p><strong>Batai Capital Partners Ltd.</strong></p>
-                            <p>Registration No.: LL21467</p>
-                        </div>
-                        <div class="office-info">
-                            <p><strong>Batai Capital Management Ltd.</strong></p>
-                            <p>Registration No.: LL21725</p>
-                        </div>
-
-                    </div>
-
-                    <div class="contact-details">
+                    <div class="contact-details fade-in">
                         <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                             <div>
                                 <h4>Email</h4>
-                                <p>_</p>
-                                <a href="mailto:alazmy@bataicapital.com" class="contact-link">alazmy@bataicapital.com</a>
+                                <a href="mailto:alazmy@bataicapital.com" class="email-link">alazmy@bataicapital.com</a>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
@@ -90,64 +117,65 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Contact form is intentionally disabled. To re-enable, uncomment
+                         the block below and wire the form up to a mail/forms endpoint.
+                    <div class="contact-form fade-in">
+                        <h2 class="contact-title">Send Us a Message</h2>
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="investment">Investment Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="career">Career Opportunity</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your inquiry..."></textarea>
+                            </div>
+
+                            <button type="submit" class="cta-button full-width">Send Message</button>
+                        </form>
+                    </div>
+                    -->
                 </div>
-                <!--
-                <div class="contact-form fade-in">
-                    <h2 class="contact-title">Send Us a Message</h2>
-                    <form id="contactForm" class="form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Enter your company name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="" disabled selected>Select a subject</option>
-                                <option value="investment">Investment Inquiry</option>
-                                <option value="partnership">Partnership Opportunity</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="career">Career Opportunity</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your inquiry..."></textarea>
-                        </div>
-
-                        <button type="submit" class="cta-button full-width">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            -->
             </div>
         </section>
 
-        <section class="map-section">
-            <div class="section-content">
-                <h2 class="section-title">Visit Our Office</h2>
-                <p class="section-intro">Level 31, Sunway Putra Tower, 100, Jalan Putra, Chow Kit, 50350 Kuala Lumpur, Malaysia</p>
-                
+        <section class="map-section alt-bg">
+            <div class="wrap">
+                <div class="section-head fade-in">
+                    <h2 class="section-title">Visit Our Office</h2>
+                    <p class="section-intro">Level 31, Sunway Putra Tower, 100, Jalan Putra, Chow Kit, 50350 Kuala Lumpur, Malaysia</p>
+                </div>
+
                 <div class="map-container fade-in">
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7280386904185!2d101.69018167618839!3d3.1661757530452084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc483b7dff7e29%3A0x1c647a41c61e76d!2sSunway%20Putra%20Tower!5e0!3m2!1sen!2smy!4v1768477151028!5m2!1sen!2smy" 
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7280386904185!2d101.69018167618839!3d3.1661757530452084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc483b7dff7e29%3A0x1c647a41c61e76d!2sSunway%20Putra%20Tower!5e0!3m2!1sen!2smy!4v1768477151028!5m2!1sen!2smy"
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
                             title="Batai Capital Partners Location">
                     </iframe>
@@ -156,71 +184,27 @@
         </section>
     </main>
 
+    <!-- ===== Shared footer — keep identical across all pages ===== -->
     <footer class="site-footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2025 Batai Capital Partners. All rights reserved.</p>
+            <div class="footer-top">
+                <a href="index.html" aria-label="Batai Capital Partners — home">
+                    <img src="attached_assets/LOGO.png" alt="Batai Capital Partners" class="footer-logo" width="2826" height="840">
+                </a>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Approach</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span data-year>2025</span> Batai Capital Partners. All rights reserved.</p>
+                <p class="footer-note">Kuala Lumpur, Malaysia</p>
+            </div>
         </div>
     </footer>
-    
-    <script>
-        // Form submission handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    
-                    const submitButton = this.querySelector('button[type="submit"]');
-                    const originalText = submitButton.textContent;
-                    
-                    try {
-                        // Show loading state
-                        submitButton.textContent = 'Sending...';
-                        submitButton.disabled = true;
-                        submitButton.classList.add('loading');
-                        
-                        // Simulate API call
-                        const formData = new FormData(this);
-                        const data = Object.fromEntries(formData);
-                        
-                        // Simulate network delay
-                        await new Promise(resolve => setTimeout(resolve, 1500));
-                        
-                        // Show success message
-                        alert('Thank you for your message! We will get back to you soon.');
-                        contactForm.reset();
-                        
-                    } catch (error) {
-                        console.error('Error:', error);
-                        alert('Sorry, there was an error sending your message. Please try again.');
-                    } finally {
-                        // Reset button state
-                        submitButton.textContent = originalText;
-                        submitButton.disabled = false;
-                        submitButton.classList.remove('loading');
-                    }
-                });
-            }
 
-            // Add fade-in class to elements
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const fadeInOnScroll = () => {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-                    
-                    if (elementTop < window.innerHeight - elementVisible) {
-                        element.classList.add('visible');
-                    }
-                });
-            };
-
-            // Initial check
-            fadeInOnScroll();
-            window.addEventListener('scroll', fadeInOnScroll);
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
